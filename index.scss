@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'stolzl_medium';
+    src: url('fonts/stolzl_medium.otf');
+}
+
+@font-face {
+    font-family: 'stolzl_regular';
+    src: url('fonts/stolzl_regular.otf');
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('fonts/Verdana.ttf');
+}
+
+$max-width: 1090px;
+$card-height: 280px;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    body {
+        background: #F3F8FC;
+        color: #000000;
+
+
+        .container {
+            max-width: $max-width;
+            margin: 0 auto;
+
+            p {
+                font-family: 'Verdana';
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+            }
+
+            .title {
+                font-family: 'stolzl_medium';
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 500;
+                margin: 94px 0 24px 40px;
+            }
+
+            .cards {
+                display: flex;
+                gap: 20px;
+                max-width: $max-width;
+                height: $card-height;
+
+                .card_1 {
+                    width: 443px;
+                }
+
+                .card_2 {
+                    width: 300px;
+                }
+
+                .card_3 {
+                    width: 307px;
+                }
+
+                .card {
+                    background-color: #FFFFFF;
+                    border-radius: 40px;
+                    padding: 41px 40px 40px 40px; // Отступ внутри карточки
+                    box-shadow: 0px 4px 4px -2px #18274B0A;
+                    box-shadow: 0px 2px 4px -2px #18274B0F;
+                    display: flex;
+                    flex-direction: column; // Расположение деталей карточки
+                    position: relative;
+
+                    .subtitle {
+                        font-family: 'stolzl_medium';
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 500;
+                        margin: 0 8px 19px 0;
+                    }
+
+                    .icon_info {
+                        width: 16px;
+                        height: 16px;
+                        position: absolute;
+                        left: 242px;
+                        top: 42px;
+                    }
+
+                    .diagram {
+                        width: 160px;
+                        height: 160px;
+                    }
+
+                    .result {
+                        font-family: 'stolzl_regular';
+                        font-size: 32px;
+                        line-height: 40px;
+                        font-weight: 400;
+                        position: absolute;
+                    }
+
+                    .result_1 {
+                        top: 138px;
+                        left: 84px;
+                    }
+
+                    .result_2 {
+                        top: 149px;
+                        left: 125px;
+                    }
+
+
+                    .content_column {
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 94px;
+                        right: 41px;
+                        width: 182px;
+
+                        .subsubtitle {
+                            font-family: 'stolzl_medium';
+                            font-size: 14px;
+                            line-height: 18px;
+                            font-weight: 500;
+                            margin-bottom: 12px;
+                        }
+
+                        .count {
+                            display: flex;
+                            margin-bottom: 8px;
+
+                            .color {
+                                width: 8px;
+                                height: 8px;
+                                margin: 5px 8px 5px 0;
+                            }
+
+                            .proportion {
+                                color: #808080;
+                                padding-left: 4px;
+                            }
+                        }
+                    }
+
+                    .semicircle {
+                        width: 200px;
+                        height: 100px;
+                        margin: 0 0 0 10px;
+                    }
+
+                    .text_card2 {
+                        margin: 21px 7px;
+                        text-align: center;
+                    }
+
+                    .attention {
+                        display: flex;
+                        border: 1px solid #E7F1F9;
+                        padding: 4px 11px 4px 11px;
+                        gap: 6px;
+                        border-radius: 8px;
+                        width: auto;
+                        max-width: fit-content;
+                        margin-bottom: 10px;
+
+                        .icon_attention {
+                            width: 16px;
+                            height: 16px;
+                        }
+
+                        .text_card3 {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
